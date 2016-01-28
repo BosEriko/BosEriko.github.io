@@ -1,5 +1,3 @@
-# BosEriko.github.io
+I'm an advanced user of HTML, CSS and jQuery. My designs are always responsive and I use Bootstrap as its framework. I also have an intermediate knowledge on AngularJS, PHP, C++ and Python. I can also use WordPress and GitHub if needed.
 
-Updated on: January 28, 2015
-
-This is a test.
+I'm looking for a job where I can increase my knowledge. I'm flexible and willing to learn whatever is needed for the project that is given to me. I love making UI that follows the current trend. Developing things from scratch is my passion.
