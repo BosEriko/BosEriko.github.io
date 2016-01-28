@@ -256,7 +256,7 @@ footer a, footer a:hover, footer a:focus{
 // VI. Jumbotron Style //
 // =================== */
 .a-personal-jumbotron-wallpaper{
- background-image:url("jumbotron-background.jpeg");
+ background-image:url("../gfx/jumbotron-background.jpeg");
  background-repeat:no-repeat;
  background-position:center;
  background-size:cover;
