@@ -424,15 +424,12 @@ footer a, footer a:hover, footer a:focus{
 .a-testimony-message{
  background-color:#fff;
  border-radius:5px;
- border-width:1px;
- border-color:#444;
- border-style:solid;
  color:#444;
  margin-left:110px;
  padding:10px;
  min-height:100px;
  position:relative;
- z-index:2;
+ z-index:1;
  font-size:13px;
 }
 .a-testimony-holder img{
@@ -455,18 +452,7 @@ footer a, footer a:hover, footer a:focus{
  border-top:15px solid transparent;
  border-bottom:15px solid transparent; 
  border-right:15px solid #fff;
- z-index:3;
-}
-.a-testimony-arrow-border{
- position:absolute;
- top:30px;
- left:98px;
- width:0; 
- height:0; 
- border-top:15px solid transparent;
- border-bottom:15px solid transparent; 
- border-right:15px solid #444;
- z-index:1;
+ z-index:2;
 }
 .a-testimony-message-inside{
  text-align:justify;
