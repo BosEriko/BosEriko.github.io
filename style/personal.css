@@ -17,6 +17,7 @@
 // .... VI. Jumbotron Style ............ //
 // ... VII. Skills Showcase Style ...... //
 // .. VIII. Hire Me Style .............. //
+// .... IX. Testimonies Style .......... //
 // ..................................... //
 // ===================================== */
 
@@ -385,3 +386,96 @@ footer a, footer a:hover, footer a:focus{
  background-color:#f6653c;
 }
 /* =================== */
+
+
+
+
+
+/* ===================== //
+// IX. Testimonies Style //
+// ===================== */
+.a-testimonies-jumbotron{
+ background-color:#4c5867;
+ color:#fff;
+ margin-bottom:0;
+}
+.a-testimonies-title{
+ text-align:center;
+}
+.a-testimonies-title h1{
+ font-family: 'Montserrat', sans-serif;
+ font-size:50px;
+}
+.a-testimonies-title hr{
+ border-width:3px 0 0 0;
+ border-style:solid;
+ border-color:#fff;
+ width:50px;
+ margin-top:10px;
+ margin-bottom:10px;
+}
+.a-testimonies-title{
+ margin-bottom:15px;
+}
+.a-testimony-holder{
+ position:relative;
+ margin-bottom:15px;
+}
+.a-testimony-message{
+ background-color:#fff;
+ border-radius:5px;
+ border-width:1px;
+ border-color:#444;
+ border-style:solid;
+ color:#444;
+ margin-left:110px;
+ padding:10px;
+ min-height:100px;
+ position:relative;
+ z-index:2;
+ font-size:13px;
+}
+.a-testimony-holder img{
+ width:90px;
+ height:90px;
+ position:absolute;
+ top:0;
+ left:0;
+ border-width:2px;
+ border-style:solid;
+ border-color:#fff;
+ border-radius:100%;
+}
+.a-testimony-arrow{
+ position:absolute;
+ top:30px;
+ left:100px;
+ width:0; 
+ height:0; 
+ border-top:15px solid transparent;
+ border-bottom:15px solid transparent; 
+ border-right:15px solid #fff;
+ z-index:3;
+}
+.a-testimony-arrow-border{
+ position:absolute;
+ top:30px;
+ left:98px;
+ width:0; 
+ height:0; 
+ border-top:15px solid transparent;
+ border-bottom:15px solid transparent; 
+ border-right:15px solid #444;
+ z-index:1;
+}
+.a-testimony-message-inside{
+ text-align:justify;
+ margin-bottom:5px;
+}
+.a-testimony-message-inside i{
+ color:#808080;
+}
+.a-testimony-message-person{
+ text-align:right;
+}
+/* ===================== */
