@@ -561,4 +561,26 @@ footer a, footer a:hover, footer a:focus{
  width:50px;
  max-width:100%;
 }
+.a-projects-more{
+ text-align:center;
+}
+.a-projects-more a{
+ text-decoration:none;
+ display:inline-block;
+ border-width:3px;
+ border-style:solid;
+ border-color:#fff;
+ border-radius:5px;
+ background-color:#fff;
+ padding:10px 20px;
+ color:#0074BF;
+ font-size:18px;
+ font-weight:bold;
+ -webkit-transition:all 0.3s 0s ease-out;
+ transition:all 0.3s 0s ease-out;
+}
+.a-projects-more a:hover, .a-projects-more a:focus{
+ color:#fff;
+ background-color:#0074BF;
+}
 /* ================= */
