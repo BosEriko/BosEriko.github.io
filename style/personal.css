@@ -474,5 +474,91 @@ footer a, footer a:hover, footer a:focus{
 /* ================= //
 // X. Projects Style //
 // ================= */
-
+.a-projects-jumbotron{
+ margin-bottom:0;
+ background-color:#0074BF;
+ color:#fff;
+}
+.a-projects-title{
+ text-align:center;
+}
+.a-projects-title h1{
+ font-family: 'Montserrat', sans-serif;
+ font-size:50px;
+}
+.a-projects-title hr{
+ border-width:3px 0 0 0;
+ border-style:solid;
+ border-color:#fff;
+ width:50px;
+ margin-top:10px;
+ margin-bottom:10px;
+}
+.a-projects-holder{
+ position:relative;
+ border-width:1px;
+ border-style:solid;
+ border-color:#444;
+ background-color:#fff;
+ background-image:url("../gfx/stripe.png");
+ background-repeat:repeat;
+ background-position:center;
+ margin-bottom:20px;
+}
+.a-projects-holder:before {
+ display:block;
+ content:"";
+ width:100%;
+ padding-top:45%;
+}
+.a-projects-holder > a{
+ display:block;
+ position:absolute;
+ top:0;
+ left:0;
+ right:0;
+ bottom:0;
+ border-width:1px;
+ border-style:solid;
+ border-color:#ADADAD;
+ background-color:#fff;
+ background-repeat:no-repeat;
+ background-position:center;
+ background-size:cover;
+ margin:5px;
+ text-decoration:none;
+}
+.a-projects-holder  a:hover,
+.a-projects-holder a:focus{
+ text-decoration:none;
+}
+.a-projects-detail{
+ display:table;
+ text-align:center;
+ width:100%;
+ height:100%;
+ background-color:rgba(255,255,255,.8);
+ opacity:0;
+ -webkit-transition:all 0.3s 0s ease-out;
+ transition:all 0.3s 0s ease-out;
+}
+.a-projects-holder > a:hover .a-projects-detail,
+.a-projects-holder > a:focus .a-projects-detail{
+ opacity:1;
+}
+.a-projects-detail .a-projects-detail-cell{
+ display:table-cell;
+ vertical-align:middle;
+ text-transform:uppercase;
+ color:#444;
+}
+.a-projects-detail hr{
+ margin:5px auto;
+ padding:0;
+ border-width:1px 0 0 0;
+ border-style:solid;
+ border-color:#333333;
+ width:50px;
+ max-width:100%;
+}
 /* ================= */
