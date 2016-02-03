@@ -464,6 +464,8 @@ footer a, footer a:hover, footer a:focus{
 }
 .a-testimony-message-person{
  text-align:right;
+ font-style:italic;
+ color:#888;
 }
 /* ===================== */
 
