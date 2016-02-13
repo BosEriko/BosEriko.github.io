@@ -525,7 +525,6 @@ footer a, footer a:hover, footer a:focus{
     border-style:solid;
     border-color:#bbb;
     overflow:hidden;
-    border-radius:5px;
     margin-bottom:20px;
     -webkit-transition:all 0.3s 0s ease-in-out;
     transition:all 0.3s 0s ease-in-out;
@@ -540,8 +539,6 @@ footer a, footer a:hover, footer a:focus{
     border-color:#ddd;
     display:block;
     opacity:1;
-    background-color:#bbb;
-    border-radius:5px 5px 0 0;
     -webkit-transition:all 0.3s 0s ease-in-out;
     transition:all 0.3s 0s ease-in-out;
 }
@@ -552,7 +549,6 @@ footer a, footer a:hover, footer a:focus{
 .a-projects-holder > a.a-projects-image-link > img{
     width:100%;
     display:block;
-    border-radius:5px 5px 0 0;
     vertical-align:bottom;
 }
 .a-projects-holder > a.a-projects-title{
@@ -584,6 +580,7 @@ footer a, footer a:hover, footer a:focus{
     border-color:#ddd;
     text-align:right;
     font-size:14px;
+    background-color:#eee;
 }
 .a-projects-holder > .a-projects-links > a{
     color:#666;
