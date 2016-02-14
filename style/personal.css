@@ -591,4 +591,8 @@ footer a, footer a:hover, footer a:focus{
 .a-projects-holder > .a-projects-links > a:focus{
     color:#CD3C2A;
 }
+.a-projects-holder .a-projects-date{
+    float:left;
+    color:#666;
+}
 /* ================= */
