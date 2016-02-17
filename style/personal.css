@@ -19,6 +19,7 @@
 // .. VIII. Hire Me Style .............. //
 // .... IX. Testimonies Style .......... //
 // ..... X. Projects Style ............. //
+// ..... X. About Me Style ............. //
 // ..................................... //
 // ===================================== */
 
@@ -32,7 +33,9 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(https://fonts.googleapis.com/css?family=Courgette);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Bitter);
 /* ========== */
 
 
@@ -217,7 +220,7 @@ ul.a-nav{
 .a-connection-icons li a:hover.behance, .a-connection-icons li a:focus.behance{color:#1769ff;}
 .a-connection-icons li a:hover.instagram, .a-connection-icons li a:focus.instagram{color:#125688;}
 .a-connection-icons li a:hover.linkedin, .a-connection-icons li a:focus.linkedin{color:#287bbc;}
-.a-connection-icons li a:hover.github, .a-connection-icons li a:focus.linkedin{color:#4078c0;}
+.a-connection-icons li a:hover.github, .a-connection-icons li a:focus.github{color:#4078c0;}
 /* ======================== */
 
 
@@ -594,5 +597,87 @@ footer a, footer a:hover, footer a:focus{
 .a-projects-holder .a-projects-date{
     float:left;
     color:#666;
+}
+/* ================= */
+
+
+
+
+
+/* ================= //
+// X. About Me Style //
+// ================= */
+.a-about-me-details{
+    margin-bottom:20px;
+}
+.a-about-me-details h1{
+    font-family: 'Lobster', cursive;
+    font-size:70px;
+    color:#444;
+    margin:20px 0 0 0;
+    padding:0;
+}
+.a-about-me-details h3{
+    margin:0 0 10px 0;
+    padding:0 20px;
+    font-size:15px;
+    color:#888;
+    font-family: 'Bitter', serif;
+}
+.a-about-me-details p{
+    padding:15px;
+    margin:0;
+    font-size:16px;
+    text-align:justify;
+}
+.a-about-me-details .a-about-me-details-image{
+    padding:40px 30px 20px 30px;
+}
+.a-about-me-details .a-about-me-details-image img{
+    width:100%;
+    border-radius:50%;
+    vertical-align:bottom;
+}
+ul.a-about-me-social{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    font-size:20px;
+    text-align:center;
+}
+ul.a-about-me-social > li{
+    display:inline-block;
+    margin:0;
+    padding:0;
+}
+ul.a-about-me-social > li > a{
+    display:inline-block;
+    text-decoration:none;
+}
+ul.a-about-me-social > li > a:hover,
+ul.a-about-me-social > li > a:focus{
+    text-decoration:none;
+}
+ul.a-about-me-social > li > a > span > i.fa-circle{color:#ddd;}
+ul.a-about-me-social > li > a > span > i.fa-facebook{color:#3a5795;}
+ul.a-about-me-social > li > a > span > i.fa-google-plus{color:#CD3C2A;}
+ul.a-about-me-social > li > a > span > i.fa-twitter{color:#55acee;}
+ul.a-about-me-social > li > a > span > i.fa-tumblr{color:#36465d;}
+ul.a-about-me-social > li > a > span > i.fa-pinterest{color:#bd081c;}
+ul.a-about-me-social > li > a > span > i.fa-behance{color:#1769ff;}
+ul.a-about-me-social > li > a > span > i.fa-instagram{color:#125688;}
+ul.a-about-me-social > li > a > span > i.fa-linkedin{color:#287bbc;}
+ul.a-about-me-social > li > a > span > i.fa-github{color:#4078c0;}
+ul.a-about-me-social > li > a > span > i{
+    -webkit-transition:all 0.3s 0s ease-in-out;
+    transition:all 0.3s 0s ease-in-out;
+}
+ul.a-about-me-social > li > a:hover > span > i:nth-child(1),
+ul.a-about-me-social > li > a:focus > span > i:nth-child(1){
+    color:#444;
+}
+ul.a-about-me-social > li > a:hover > span > i:last-child,
+ul.a-about-me-social > li > a:focus > span > i:last-child{
+    color:#fff;
 }
 /* ================= */
