@@ -218,6 +218,7 @@ ul.a-nav{
 .a-connection-icons li a:hover.tumblr, .a-connection-icons li a:focus.tumblr{color:#36465d;}
 .a-connection-icons li a:hover.pinterest, .a-connection-icons li a:focus.pinterest{color:#bd081c;}
 .a-connection-icons li a:hover.behance, .a-connection-icons li a:focus.behance{color:#1769ff;}
+.a-connection-icons li a:hover.dribbble, .a-connection-icons li a:focus.behance{color:#ea4c89;}
 .a-connection-icons li a:hover.instagram, .a-connection-icons li a:focus.instagram{color:#125688;}
 .a-connection-icons li a:hover.linkedin, .a-connection-icons li a:focus.linkedin{color:#287bbc;}
 .a-connection-icons li a:hover.github, .a-connection-icons li a:focus.github{color:#4078c0;}
@@ -642,7 +643,7 @@ ul.a-about-me-social{
     margin:0;
     padding:0;
     list-style-type:none;
-    font-size:20px;
+    font-size:18px;
     text-align:center;
 }
 ul.a-about-me-social > li{
@@ -665,6 +666,7 @@ ul.a-about-me-social > li > a > span > i.fa-twitter{color:#55acee;}
 ul.a-about-me-social > li > a > span > i.fa-tumblr{color:#36465d;}
 ul.a-about-me-social > li > a > span > i.fa-pinterest{color:#bd081c;}
 ul.a-about-me-social > li > a > span > i.fa-behance{color:#1769ff;}
+ul.a-about-me-social > li > a > span > i.fa-dribbble{color:#ea4c89;}
 ul.a-about-me-social > li > a > span > i.fa-instagram{color:#125688;}
 ul.a-about-me-social > li > a > span > i.fa-linkedin{color:#287bbc;}
 ul.a-about-me-social > li > a > span > i.fa-github-alt{color:#4078c0;}
