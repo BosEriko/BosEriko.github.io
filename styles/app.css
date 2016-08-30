@@ -1,0 +1,1142 @@
+/* ======================== //
+// Bos Eriko Reyes (c) 2016 //
+// ======================== */
+
+/* ===================================== //
+// ........ TABLE OF CONTENTS .......... //
+// ..................................... //
+// ..... I. Plug-in .................... //
+// .... II. General Style .............. //
+// ... III. Header Style ............... //
+// .... IV. Footer Style ............... //
+// ..... V. Welcome Screen Style ....... //
+// .... VI. About Me Section Style ..... //
+// ... VII. Behance Section Style ...... //
+// .. VIII. Dribbble Section Style ..... //
+// .... IX. CodePen Section Style ...... //
+// ..... X. GitHub Section Style ....... //
+// .... XI. Loading Screen Style ....... //
+// ..................................... //
+// ===================================== */
+
+/* ========== //
+// I. Plug-in //
+// ========== */
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface';
+@import 'https://fonts.googleapis.com/css?family=Exo:400,700';
+@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+@import 'https://fonts.googleapis.com/css?family=Play';
+@import 'https://fonts.googleapis.com/css?family=Abel';
+@import 'https://fonts.googleapis.com/css?family=Passion+One';
+@import 'https://fonts.googleapis.com/css?family=Miriam+Libre';
+/* ========== */
+
+/* ================= //
+// II. General Style //
+// ================= */
+body{
+    background-color: #fff;
+    color: #444;
+    font-family: Tahoma;
+    overflow: hidden;
+}
+a,
+a:active,
+a:hover,
+a:focus,
+a:visited{
+    color: #B52424;
+}
+.vertical-align-holder {
+    display: table;
+}
+.vertical-align-holder > .vertical-align-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+/* ================= */
+
+/* ================= //
+// III. Header Style //
+// ================= */
+header{
+    background-color: rgba(255,255,255,.1);
+    bottom: 0;
+    color: #fff;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    transition: all 0.3s 0s ease-out;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    -webkit-transition: all 0.3s 0s ease-out;
+}
+header.fixed{
+    background-color: #fff;
+    bottom: auto;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,.25);
+    color: #CD3C2A;
+    position: fixed;
+    top: 0;
+}
+nav.main{
+    display: block;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+nav.main ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+nav.main ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+}
+nav.main ul li .vertical-align-holder{
+    height: 60px;
+}
+nav.main ul li a{
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    text-decoration: none;
+}
+header.fixed nav.main ul li a{
+    color: #444;
+}
+nav.main ul li a:before{
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+    visibility: hidden;
+    width: 100%;
+    -webkit-transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+}
+header.fixed nav.main ul li a:before{
+    background-color: #444;
+}
+nav.main ul li a:hover:before,
+nav.main ul li a:focus:before,
+nav.main ul li.active a:before{
+    transform: scaleX(1);
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+}
+.logo-and-nav-button .logo{
+    height: 60px;
+    left: 20px;
+    position: fixed;
+    top: 0;
+    width: 60px;
+}
+.logo-and-nav-button .logo a{
+    background-color: #E53A40;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,.5);
+    color: #fff;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s 0s ease-out;
+    width: 100%;
+    -webkit-transition: all 0.3s 0s ease-out;
+}
+header.fixed .logo-and-nav-button .logo a{
+    box-shadow: none;
+}
+.logo-and-nav-button .logo a .vertical-align-holder{
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.logo-and-nav-button .logo a:hover,
+.logo-and-nav-button .logo a:focus{
+    background-color: #E06C70;
+}
+.logo-and-nav-button .nav-button{
+    display: none;
+    float: right;
+    height: 50px;
+    width: 50px;
+}
+.logo-and-nav-button .nav-button a{
+    color: #444;
+    display: block;
+    font-size: 25px;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s 0s ease-out;
+    width: 100%;
+    -webkit-transition: all 0.3s 0s ease-out;
+}
+.logo-and-nav-button .nav-button a:hover,
+.logo-and-nav-button .nav-button a:focus{
+    background-color: #ddd;
+}
+.logo-and-nav-button .nav-button a .vertical-align-holder{
+    height: 100%;
+    width: 100%;
+}
+@media(max-width:991px){
+    header{
+        background-color: #fff;
+        bottom: auto;
+        box-shadow: 0 0 3px 2px rgba(0,0,0,.25);
+        height: auto;
+        position: fixed;
+        text-align: left;
+        top: 0;
+    }
+    nav.main{
+        font-family: Tahoma;
+        font-size: medium;
+        text-transform: none;
+    }
+    nav.main ul{
+        display: none;
+    }
+    nav.main ul li{
+        display: block;
+        padding: 0;
+    }
+    nav.main ul li .vertical-align-holder{
+        height: auto;
+        display: block;
+    }
+    nav.main ul li .vertical-align-content{
+        display: block;
+        vertical-align: baseline;
+    }
+    nav.main ul li a{
+        border-color: #eee;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        color: #444;
+        display: block;
+        padding: 10px;
+        position: static;
+    }
+    nav.main ul li a:before{
+        display: none;
+    }
+    nav.main ul li a:hover,
+    nav.main ul li a:focus,
+    nav.main ul li.active a,
+    header.fixed nav.main ul li a:hover,
+    header.fixed nav.main ul li a:focus,
+    header.fixed nav.main ul li.active a{
+        background-color: #F5F5F5;
+        color: #E53A40;
+    }
+    .logo-and-nav-button{
+        height: 50px;
+    }
+    .logo-and-nav-button .logo{
+        float: left;
+        height: 50px;
+        left: auto;
+        position: static;
+        top: auto;
+        width: 50px;
+    }
+    .logo-and-nav-button .logo a{
+        box-shadow: none;
+        font-size: 30px;
+    }
+    .logo-and-nav-button .nav-button{
+        display: block;
+    }
+}
+@media screen and (min-width: 992px){
+    nav.main ul{
+        display: block !important;
+    }
+}
+/* ================= */
+
+/* ================ //
+// IV. Footer Style //
+// ================ */
+footer{
+    background-image: url("../graphics/footer-background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+footer a{
+    background-color: rgba(205, 60, 42, .95);
+    display: block;
+    color: #fff;
+    font-family: 'Miriam Libre', sans-serif;
+    font-size: 50px;
+    transition: all 0.3s 0s ease-out;
+    -webkit-transition: all 0.3s 0s ease-out;
+}
+footer a:hover,
+footer a:focus{
+    background-color: rgba(205, 60, 42, 1);
+    color: #fff;
+    font-size: 60px;
+    text-decoration: none;
+}
+footer a .vertical-align-holder{
+    height: 50vh;
+    text-align: center;
+    width: 100%;
+}
+@media(max-width:991px){
+    footer a{
+        font-size: 30px;
+    }
+    footer a:hover,
+    footer a:focus{
+        font-size: 35px;
+    }
+}
+/* ================ */
+
+/* ======================= //
+// V. Welcome Screen Style //
+// ======================= */
+.welcome-screen{
+    background-attachment: fixed;
+    background-image: url("../graphics/welcome-screen-background.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.welcome-screen > .filter{
+    background-color: rgba(0,0,0,.5);
+    background-image: url("../graphics/filter.png");
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.welcome-screen-text{
+    padding: 20px;
+}
+.welcome-screen-text > h1{
+    font-family: 'Exo', sans-serif;
+    font-size:75px;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+.welcome-screen-text > h2{
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+.welcome-screen .see-more{
+    bottom: 10px;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.welcome-screen .see-more a{
+    color: rgba(255,255,255,.75);
+    display: inline-block;
+    font-size: 35px;
+    transition: all 0.3s 0s ease-out;
+    -webkit-transition: all 0.3s 0s ease-out;
+}
+.welcome-screen .see-more a:hover,
+.welcome-screen .see-more a:focus{
+    color: rgba(255,255,255,.5);
+}
+@media(max-width:991px){
+    .welcome-screen-text > h1{
+        font-size: 50px;
+    }
+    .welcome-screen-text > h2{
+        font-size: 18px;
+    }
+    .welcome-screen .see-more{
+        display: block;
+    }
+    .welcome-screen{
+        background-attachment: scroll;
+        background-position: center 0 !important;
+    }
+    .welcome-screen-text{
+        opacity: 1 !important;
+    }
+    .welcome-screen > .filter{
+        margin-top: 0 !important;
+    }
+}
+/* ======================= */
+
+/* ========================== //
+// VI. About Me Section Style //
+// ========================== */
+.about-me-wallpaper{
+    background-image: url("../graphics/about-me-background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.about-me{
+    background-color: rgba(225,225,225,.95);
+    overflow: hidden;
+}
+.about-me .left-section .vertical-align-holder,
+.about-me .right-section .vertical-align-holder{
+    height: 100vh;
+}
+.about-me p{
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.about-me p:last-child{
+    padding: 0;
+}
+.about-me h3{
+    font-family: 'Passion One', cursive;
+    font-size: 75px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.about-me .about-me-buttons a.btn-primary{
+    color: #fff;
+}
+.about-me .about-me-buttons a.btn-default{
+    color: #444;
+}
+.about-me .e-mail{
+    color: #888;
+    font-size: 12px;
+    padding: 15px 0;
+}
+.about-me .left-section{
+    opacity: 0;
+}
+.about-me .right-section{
+    opacity: 0;
+}
+.about-me .e-mail a{
+    color: #888;
+    text-decoration: underline;
+}
+@media(max-width:991px){
+    .about-me .left-section .vertical-align-holder,
+    .about-me .right-section .vertical-align-holder{
+        display: block;
+        height: auto;
+    }
+    .about-me .left-section .vertical-align-content,
+    .about-me .right-section .vertical-align-content{
+        display: block;
+        vertical-align: baseline;
+    }
+    .about-me{
+        padding: 75px 0;
+    }
+}
+.about-me .left-section{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 0.5s 0s ease-out;
+    -webkit-transition: all 0.5s 0s ease-out;
+}
+.about-me .right-section{
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 0.5s 0.3s ease-out;
+    -webkit-transition: all 0.5s 0.3s ease-out;
+}
+.about-me .left-section.animated{
+    transform: translateX(0);
+    opacity: 1;
+}
+.about-me .right-section.animated{
+    transform: translateX(0);
+    opacity: 1;
+}
+@media(max-width:991px){
+    .about-me .left-section{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .about-me .right-section{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* ========================== */
+
+/* ========================== //
+// VII. Behance Section Style //
+// ========================== */
+.behance-wallpaper{
+    background-image: url("../graphics/behance-background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.behance{
+    background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.behance .left-section,
+.behance .right-section{
+    display: block;
+    width: 50%;
+}
+.behance .left-section{
+    color: #fff;
+    float: left;
+    font-size: 200px;
+    opacity: 0;
+    transform: scale(3,3);
+    transition: all 0.5s 0s ease-out;
+    -webkit-transition: all 0.5s 0s ease-out;
+}
+.behance .right-section{
+    float: right;
+    opacity: 0;
+    transform: translateX(100vw);
+    transition: all 0.3s 0.3s ease-out;
+    -webkit-transition: all 0.3s 0.3s ease-out;
+}
+.behance .left-section.animated{
+    opacity: 1;
+    transform: scale(1,1);
+}
+.behance .right-section.animated{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media(max-width:991px){
+    .behance .left-section{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    .behance .right-section{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.behance .speech-bubble{
+    background-color: #222;
+    color: #fff;
+    position: relative;
+}
+.behance .vertical-align-holder{
+    height: 100vh;
+    width: 100%;
+}
+.behance .speech-bubble-arrow-holder{
+    left: -20px;
+    position: absolute;
+    top: 50%;
+}
+.behance .speech-bubble-arrow{
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #222;
+    height: 0;
+    margin-top: -20px;
+    width: 0;
+}
+.behance .speech-bubble .speech-title{
+    font-family: 'Passion One', cursive;
+    font-size: 75px;
+    margin: 0;
+    padding: 30px 30px 0 30px;
+    text-transform: uppercase;
+}
+.behance .speech-bubble .speech-text{
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    padding:0 30px 10px 30px;
+}
+.behance .speech-bubble .speech-buttons{
+    padding: 0 30px 30px 30px;
+}
+.behance .speech-bubble .speech-buttons .btn{
+    color: #444;
+}
+@media(max-width:991px){
+    .behance .left-section,
+    .behance .right-section{
+        width: auto;
+    }
+    .behance .left-section{
+        float: none;
+        font-size: 100px;
+        padding: 40px;
+    }
+    .behance .right-section{
+        float: none;
+    }
+    .behance .vertical-align-holder{
+        display: block;
+        height: auto;
+    }
+    .behance .vertical-align-content{
+        display: block;
+        vertical-align: baseline;
+    }
+    .behance .speech-bubble-arrow-holder{
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+    .behance .speech-bubble-arrow{
+        border-top: none;
+        border-bottom: 20px solid #222;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        margin: -20px auto 0 auto;
+    }
+    .behance .speech-bubble .speech-title{
+        padding-top: 75px;
+    }
+    .behance .speech-bubble .speech-buttons{
+        padding-bottom: 75px;
+    }
+}
+/* ========================== */
+
+/* ============================ //
+// VIII. Dribbble Section Style //
+// ============================ */
+.dribbble-wallpaper{
+    background-image: url("../graphics/dribbble-background.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.dribbble{
+    background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.dribbble .left-section,
+.dribbble .right-section{
+    display: block;
+    width: 50%;
+}
+.dribbble .left-section{
+    color: #fff;
+    float: right;
+    font-size: 200px;
+    opacity: 0;
+    transform: scale(3,3);
+    transition: all 0.5s 0s ease-out;
+    -webkit-transition: all 0.5s 0s ease-out;
+}
+.dribbble .right-section{
+    float: left;
+    text-align: right;
+    transform: translateX(-100vw);
+    transition: all 0.3s 0.3s ease-out;
+    -webkit-transition: all 0.3s 0.3s ease-out;
+}
+.dribbble .left-section.animated{
+    opacity: 1;
+    transform: scale(1,1);
+}
+.dribbble .right-section.animated{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media(max-width:991px){
+    .dribbble .left-section{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    .dribbble .right-section{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.dribbble .speech-bubble{
+    background-color: #548687;
+    color: #fff;
+    position: relative;
+}
+.dribbble .vertical-align-holder{
+    height: 100vh;
+    width: 100%;
+}
+.dribbble .speech-bubble-arrow-holder{
+    right: -20px;
+    position: absolute;
+    top: 50%;
+}
+.dribbble .speech-bubble-arrow{
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #548687;
+    height: 0;
+    margin-top: -20px;
+    width: 0;
+}
+.dribbble .speech-bubble .speech-title{
+    font-family: 'Passion One', cursive;
+    font-size: 75px;
+    margin: 0;
+    padding: 30px 30px 0 30px;
+    text-transform: uppercase;
+}
+.dribbble .speech-bubble .speech-text{
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    padding:0 30px 10px 30px;
+}
+.dribbble .speech-bubble .speech-buttons{
+    padding: 0 30px 30px 30px;
+}
+.dribbble .speech-bubble .speech-buttons .btn{
+    color: #444;
+}
+@media(max-width:991px){
+    .dribbble .left-section,
+    .dribbble .right-section{
+        width: auto;
+    }
+    .dribbble .left-section{
+        float: none;
+        font-size: 100px;
+        padding: 40px;
+    }
+    .dribbble .right-section{
+        float: none;
+        text-align: left;
+    }
+    .dribbble .vertical-align-holder{
+        display: block;
+        height: auto;
+    }
+    .dribbble .vertical-align-content{
+        display: block;
+        vertical-align: baseline;
+    }
+    .dribbble .speech-bubble-arrow-holder{
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+    .dribbble .speech-bubble-arrow{
+        border-top: none;
+        border-bottom: 20px solid #548687;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        margin: -20px auto 0 auto;
+    }
+    .dribbble .speech-bubble .speech-title{
+        padding-top: 75px;
+    }
+    .dribbble .speech-bubble .speech-buttons{
+        padding-bottom: 75px;
+    }
+}
+/* ============================ */
+
+/* ========================= //
+// IX. CodePen Section Style //
+// ========================= */
+.codepen-wallpaper{
+    background-image: url("../graphics/codepen-background.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.codepen{
+    background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.codepen .left-section,
+.codepen .right-section{
+    display: block;
+    width: 50%;
+}
+.codepen .left-section{
+    color: #fff;
+    float: left;
+    font-size: 200px;
+    opacity: 0;
+    transform: scale(3,3);
+    transition: all 0.5s 0s ease-out;
+    -webkit-transition: all 0.5s 0s ease-out;
+}
+.codepen .right-section{
+    float: right;
+    opacity: 0;
+    transform: translateX(100vw);
+    transition: all 0.3s 0.3s ease-out;
+    -webkit-transition: all 0.3s 0.3s ease-out;
+}
+.codepen .left-section.animated{
+    opacity: 1;
+    transform: scale(1,1);
+}
+.codepen .right-section.animated{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media(max-width:991px){
+    .codepen .left-section{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    .codepen .right-section{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.codepen .speech-bubble{
+    background-color: #75294d;
+    color: #fff;
+    position: relative;
+}
+.codepen .vertical-align-holder{
+    height: 100vh;
+    width: 100%;
+}
+.codepen .speech-bubble-arrow-holder{
+    left: -20px;
+    position: absolute;
+    top: 50%;
+}
+.codepen .speech-bubble-arrow{
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #75294d;
+    height: 0;
+    margin-top: -20px;
+    width: 0;
+}
+.codepen .speech-bubble .speech-title{
+    font-family: 'Passion One', cursive;
+    font-size: 75px;
+    margin: 0;
+    padding: 30px 30px 0 30px;
+    text-transform: uppercase;
+}
+.codepen .speech-bubble .speech-text{
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    padding:0 30px 10px 30px;
+}
+.codepen .speech-bubble .speech-buttons{
+    padding: 0 30px 30px 30px;
+}
+.codepen .speech-bubble .speech-buttons .btn{
+    color: #444;
+}
+@media(max-width:991px){
+    .codepen .left-section,
+    .codepen .right-section{
+        width: auto;
+    }
+    .codepen .left-section{
+        float: none;
+        font-size: 100px;
+        padding: 40px;
+    }
+    .codepen .right-section{
+        float: none;
+    }
+    .codepen .vertical-align-holder{
+        display: block;
+        height: auto;
+    }
+    .codepen .vertical-align-content{
+        display: block;
+        vertical-align: baseline;
+    }
+    .codepen .speech-bubble-arrow-holder{
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+    .codepen .speech-bubble-arrow{
+        border-top: none;
+        border-bottom: 20px solid #75294d;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        margin: -20px auto 0 auto;
+    }
+    .codepen .speech-bubble .speech-title{
+        padding-top: 75px;
+    }
+    .codepen .speech-bubble .speech-buttons{
+        padding-bottom: 75px;
+    }
+}
+/* ========================= */
+
+/* ======================= //
+// X. GitHub Section Style //
+// ======================= */
+.github-wallpaper{
+    background-image: url("../graphics/github-background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.github{
+    background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.github .left-section,
+.github .right-section{
+    display: block;
+    width: 50%;
+}
+.github .left-section{
+    color: #fff;
+    float: right;
+    font-size: 200px;
+    opacity: 0;
+    transform: scale(3,3);
+    transition: all 0.5s 0s ease-out;
+    -webkit-transition: all 0.5s 0s ease-out;
+}
+.github .right-section{
+    float: left;
+    text-align: right;
+    transform: translateX(-100vw);
+    transition: all 0.3s 0.3s ease-out;
+    -webkit-transition: all 0.3s 0.3s ease-out;
+}
+.github .left-section.animated{
+    opacity: 1;
+    transform: scale(1,1);
+}
+.github .right-section.animated{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media(max-width:991px){
+    .github .left-section{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    .github .right-section{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.github .speech-bubble{
+    background-color: #655487;
+    color: #fff;
+    position: relative;
+}
+.github .vertical-align-holder{
+    height: 100vh;
+    width: 100%;
+}
+.github .speech-bubble-arrow-holder{
+    right: -20px;
+    position: absolute;
+    top: 50%;
+}
+.github .speech-bubble-arrow{
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #655487;
+    height: 0;
+    margin-top: -20px;
+    width: 0;
+}
+.github .speech-bubble .speech-title{
+    font-family: 'Passion One', cursive;
+    font-size: 75px;
+    margin: 0;
+    padding: 30px 30px 0 30px;
+    text-transform: uppercase;
+}
+.github .speech-bubble .speech-text{
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    padding:0 30px 10px 30px;
+}
+.github .speech-bubble .speech-buttons{
+    padding: 0 30px 30px 30px;
+}
+.github .speech-bubble .speech-buttons .btn{
+    color: #444;
+}
+@media(max-width:991px){
+    .github .left-section,
+    .github .right-section{
+        width: auto;
+    }
+    .github .left-section{
+        float: none;
+        font-size: 100px;
+        padding: 40px;
+    }
+    .github .right-section{
+        float: none;
+        text-align: left;
+    }
+    .github .vertical-align-holder{
+        display: block;
+        height: auto;
+    }
+    .github .vertical-align-content{
+        display: block;
+        vertical-align: baseline;
+    }
+    .github .speech-bubble-arrow-holder{
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+    .github .speech-bubble-arrow{
+        border-top: none;
+        border-bottom: 20px solid #655487;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        margin: -20px auto 0 auto;
+    }
+    .github .speech-bubble .speech-title{
+        padding-top: 75px;
+    }
+    .github .speech-bubble .speech-buttons{
+        padding-bottom: 75px;
+    }
+}
+/* ======================= */
+
+/* ======================== //
+// XI. Loading Screen Style //
+// ======================== */
+.loading-screen{
+    background-color: #58C9B9;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+.loading-screen .vertical-align-holder{
+    height: 100vh;
+    width: 100%;
+}
+.sk-folding-cube {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.75);
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+    animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+    transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+    transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+    transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%, 75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%, 100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-foldCubeAngle {
+    0%, 10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%, 75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%, 100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+/* ======================== */

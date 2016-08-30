@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bos Eriko Reyes's Personal Portfolio">
+    <meta name="description" content="Bos Eriko's Portfolio">
     <meta name="keywords" content="Front-end Website Developer/Designer, Programmer, Gamer, Blogger, Thinker">
     <title>Bos Eriko Reyes - Front-end Website Developer/Designer</title>
-    <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/bootstrap-theme.min.css">
-    <link type="text/css" rel="StyleSheet" href="style/personal.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="gfx/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="StyleSheet" href="styles/app.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="graphics/favicon.ico" type="image/x-icon"/>
 
     <!-- Bing Webmaster Tools -->
     <meta name="msvalidate.01" content="693FE677A7469F68448FB046CA455D97" />
@@ -19,8 +18,8 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Bos Eriko Reyes - Front-end Website Developer/Designer" />
-    <meta property="og:image" content="gfx/display-picture.jpg" />
-    <meta property="og:description" content="Bos Eriko Reyes's Personal Portfolio" />
+    <meta property="og:image" content="graphics/display-picture.jpg" />
+    <meta property="og:description" content="Bos Eriko's Portfolio" />
     <!-- /Open Graph -->
 
     <!--[if lt IE 9]>
@@ -42,334 +41,272 @@
     <!-- /Google Analytics -->
 
 </head>
-<body id="a-top-button">
-
-    <!-- Connection Bar -->
-    <div class="a-connection-bar clearfix hidden-xs">
-        <div class="container">
-            <ul class="a-connection-text">
-                <li><i class="fa fa-phone fa-fw"></i>&nbsp;+63935-382-0229</li>
-                <li><i class="fa fa-envelope fa-fw"></i>&nbsp;mail@boseriko.com</li>
-            </ul>
-            <ul class="a-connection-icons">
-                <li><a href="https://www.facebook.com/boseriko" target="_blank" class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook fa-fw"></i><span class="sr-only">Facebook</span></a></li>
-                <li><a href="https://plus.google.com/+BosErikoReyes" target="_blank" class="google-plus" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus fa-fw"></i><span class="sr-only">Google+</span></a></li>
-                <li><a href="https://twitter.com/BosEriko" target="_blank" class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter fa-fw"></i><span class="sr-only">Twitter</span></a></li>
-                <li><a href="http://boseriko.tumblr.com" target="_blank" class="tumblr" data-toggle="tooltip" data-placement="bottom" title="Tumblr"><i class="fa fa-tumblr fa-fw"></i><span class="sr-only">Tumblr</span></a></li>
-                <li><a href="https://www.pinterest.com/boseriko" target="_blank" class="pinterest" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest-p fa-fw"></i><span class="sr-only">Pinterest</span></a></li>
-                <li><a href="https://www.behance.net/bos-eriko" target="_blank" class="behance" data-toggle="tooltip" data-placement="bottom" title="Behance"><i class="fa fa-behance fa-fw"></i><span class="sr-only">Behance</span></a></li>
-                <li><a href="https://www.dribbble.com/BosEriko" target="_blank" class="dribbble" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble fa-fw"></i><span class="sr-only">Dribbble</span></a></li>
-                <li><a href="https://www.instagram.com/boseriko" target="_blank" class="instagram" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram fa-fw"></i><span class="sr-only">Instagram</span></a></li>
-                <li><a href="https://www.linkedin.com/in/bos-eriko-reyes-203362a9" target="_blank" class="linkedin" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin fa-fw"></i><span class="sr-only">LinkedIn</span></a></li>
-                <li><a href="https://github.com/BosEriko" target="_blank" class="github" data-toggle="tooltip" data-placement="bottom" title="GitHub"><i class="fa fa-github-alt fa-fw"></i><span class="sr-only">GitHub</span></a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- /Connection Bar -->
-
-
-
-
-
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container clearfix">
-            <div class="a-logo"><a href="/"><img src="gfx/logo.png" alt="Logo" /><span class="sr-only">Home</span></a></div>
-            <nav class="a-nav-holder">
-                <ul class="a-nav hidden-sm hidden-xs">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><a href="about.htm">About</a></li>
-                    <li><a href="https://www.behance.net/bos-eriko" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Go to Behance">Projects</a></li>
-                    <li><a href="http://boseriko.tumblr.com">Blog</a></li>
-                    <li><a href="http://goo.gl/forms/ERQnpbVSv4" target="_blank" class="a-nav-hire"><i class="fa fa-heart fa-fw"></i>&nbsp;Hire Me</a></li>
-                </ul>
-                <ul class="a-nav hidden-lg hidden-md">
-                    <li><a href="#" class="a-nav-toggle-button"><i class="fa fa-bars fa-fw"></i>&nbsp;Menu</a></li>
+<body id="top">
+    <!-- Welcome Screen -->
+    <div class="welcome-screen">
+        <!-- Header -->
+        <header>
+            <!-- Navigation -->
+            <nav class="main">
+                <ul>
+                    <li class="about-me-link">
+                        <div class="vertical-align-holder">
+                            <div class="vertical-align-content">
+                                <a href="#about-me"><i class="fa fa-fw fa-info-circle" aria-hidden="true"></i> About Me</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="behance-link">
+                        <div class="vertical-align-holder">
+                            <div class="vertical-align-content">
+                                <a href="#behance"><i class="fa fa-fw fa-behance" aria-hidden="true"></i> Behance</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dribbble-link">
+                        <div class="vertical-align-holder">
+                            <div class="vertical-align-content">
+                                <a href="#dribbble"><i class="fa fa-fw fa-dribbble" aria-hidden="true"></i> Dribbble</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="codepen-link">
+                        <div class="vertical-align-holder">
+                            <div class="vertical-align-content">
+                                <a href="#codepen"><i class="fa fa-fw fa-codepen" aria-hidden="true"></i> CodePen</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="github-link">
+                        <div class="vertical-align-holder">
+                            <div class="vertical-align-content">
+                                <a href="#github"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
+            <!-- /Navigation -->
+            <div class="logo-and-nav-button">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#top" data-toggle="tooltip" data-placement="bottom" title="Top">
+                        <div class="vertical-align-holder">
+                            <div class="vertical-align-content">
+                                B
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- /Logo -->
+                <!-- Navigation Toggle -->
+                <div class="nav-button">
+                    <a href="#">
+                        <div class="vertical-align-holder">
+                            <div class="vertical-align-content">
+                                <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- /Navigation Toggle -->
+            </div>
+        </header>
+        <!-- /Header -->
+        <div class="filter vertical-align-holder">
+            <div class="welcome-screen-text vertical-align-content">
+                <h1>Hello, I'm Bos Eriko</h1>
+                <h2>A blogger, a programmer and a website designer.</h2>
+            </div>
         </div>
-    </header>
-    <nav class="a-nav-holder-mobile">
-        <ul class="a-nav-mobile">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="about.htm">About</a></li>
-            <li><a href="https://www.behance.net/bos-eriko" target="_blank">Projects</a></li>
-            <li><a href="http://boseriko.tumblr.com">Blog</a></li>
-            <li><a href="http://goo.gl/forms/ERQnpbVSv4" target="_blank">Hire Me</a></li>
-        </ul>
-    </nav>
-    <!-- /Header & Navigation -->
+        <!-- Mobile See More -->
+        <div class="see-more">
+            <a href="#about-me" data-toggle="tooltip" data-placement="top" title="Learn More">
+                <i class="fa fa-chevron-down fa-fw" aria-hidden="true"></i>
+            </a>
+        </div>
+        <!-- /Mobile See More -->
+    </div>
+    <!-- /Welcome Screen -->
 
-
-
-
-
-    <!-- Jumbotron -->
-    <div class="a-personal-jumbotron-wallpaper">
-        <div class="jumbotron a-personal-jumbotron">
-            <div class="visible-lg visible-md" style="height:25px;"></div>
-            <div class="visible-lg" style="height:25px;"></div>
+    <!-- About Me Section -->
+    <div class="about-me-wallpaper" id="about-me">
+        <div class="about-me">
             <div class="container">
-                <div><img src="gfx/display-picture.jpg" alt="Display Picture" /></div>
-                <div>
-                    <h2>Hello, I'm Bos!</h2>
-                </div>
-                <div>
-                    <p>And I'm a front-end website developer/designer.</p>
-                </div>
-                <div class="a-personal-jumbotron-button"><a href="#skills-showcase"><i class="fa fa-rocket fa-fw"></i>&nbsp;See my skills</a></div>
-            </div>
-            <div class="visible-lg visible-md" style="height:25px;"></div>
-            <div class="visible-lg" style="height:25px;"></div>
-        </div>
-    </div>
-    <!-- /Jumbotron -->
-
-
-
-
-
-    <!-- Skills Showcase -->
-    <div class="jumbotron a-skills-showcase" id="skills-showcase">
-        <div class="container">
-            <div class="a-skills-showcase-title">
-                <h1>My Skills</h1>
-                <hr />
-                <p>See what I have to offer.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div> <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x" style="color:#fff;"></i> <i class="fa fa-eye fa-stack-1x" style="color:#9b59b6;"></i> </span> </div>
-                    <div>
-                        <h3>Keen Eye</h3>
+                <div class="row">
+                    <div class="col-md-6 left-section">
+                        <div class="vertical-align-holder">
+                            <div class="vertical-align-content">
+                                <h3>What's up?</h3>
+                                <div class="about-me-buttons">
+                                    <a class="btn btn-primary btn-lg" href="https://docs.google.com/document/d/14rC5IAxWO574D_QmFox8xhSXYzLR-z4VaUwO01RP8Ng" target="_blank"><i class="fa fa-file-text-o fa-fw" aria-hidden="true"></i> Résumé</a>
+                                    <div class="btn-group btn-group-lg" role="group">
+                                        <a class="btn btn-default" href="https://twitter.com/BosEriko" target="_blank"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i> Twitter</a>
+                                        <a class="btn btn-default" href="http://boseriko.tumblr.com/" target="_blank"><i class="fa fa-comment fa-fw" aria-hidden="true"></i> Blog</a>
+                                    </div>
+                                </div>
+                                <div class="e-mail">
+                                    Contact me at <a href="mailto:mail@boseriko.com">mail@boseriko.com</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <hr />
-                    <div>I have a keen eye when it comes to small/minor mistakes. Rest assured that I'll be removing most of the errors before I'm done.</div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div> <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x" style="color:#fff;"></i> <i class="fa fa-hourglass-half fa-stack-1x" style="color:#9b59b6;"></i> </span> </div>
-                    <div>
-                        <h3>Fast and Reliable</h3>
+                    <div class="col-md-6 right-section">
+                        <div class="vertical-align-holder">
+                            <div class="vertical-align-content">
+                                <p>Hi there! My name is Bos Eriko. I'm a website designer &amp; developer based in the Philippines. I have keen eye for details and I'm also very patient when it comes to checking the minor mistakes of my work.</p>
+                                <p>I’ve been developing and designing websites for over three years now. I’ve learned a lot; from HTML to simple scripts in Python. I’m willing to learn anything and everything that is related to it because it is a very fun profession.</p>
+                                <p>I’m very much willing to be hired and learn new stuffs if I’m not doing anything so feel free to contact me.</p>
+                            </div>
+                        </div>
                     </div>
-                    <hr />
-                    <div>I work like tomorrow is the deadline. The project will be done before the date that you want it. It will be clean and perfected.</div>
-                </div>
-                <div class="clearfix visible-sm-block"></div>
-                <div class="col-md-3 col-sm-6">
-                    <div> <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x" style="color:#fff;"></i> <i class="fa fa-magic fa-stack-1x" style="color:#9b59b6;"></i> </span> </div>
-                    <div>
-                        <h3>Flexible</h3>
-                    </div>
-                    <hr />
-                    <div>I'm always willing to learn. If you want me to learn something for your project then I'll gladly do it for you.</div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div> <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x" style="color:#fff;"></i> <i class="fa fa-pencil fa-stack-1x" style="color:#9b59b6;"></i> </span> </div>
-                    <div>
-                        <h3>Clean Codes</h3>
-                    </div>
-                    <hr />
-                    <div>My codes are well-commented most of the time. If you have experience on website developing then editing my designs will be easy for you.</div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /Skills Showcase -->
+    <!-- /About Me Section -->
 
-
-
-
-
-    <!-- Projects -->
-    <div class="jumbotron a-projects-jumbotron">
-        <div class="container">
-            <div class="a-projects-title">
-                <h1>Projects</h1>
-                <hr />
-                <p>A sneak peek of my works.</p>
+    <!-- Behance Section -->
+    <div class="behance-wallpaper" id="behance">
+        <div class="behance clearfix">
+            <div class="left-section">
+                <div class="vertical-align-holder">
+                    <div class="vertical-align-content text-center">
+                        <i class="fa fa-behance" aria-hidden="true"></i>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <!-- Project Entry -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="a-projects-holder">
-                        <a href="https://www.behance.net/gallery/35643943/First-few-projects-on-my-job" target="_blank" class="a-projects-image-link"><img src="http://i.imgur.com/Op0lal4.jpg" alt="Rapid Solutions Inc"/></a>
-                        <a href="https://www.behance.net/gallery/35643943/First-few-projects-on-my-job" target="_blank" class="a-projects-title">Rapid Solutions Inc</a>
-                        <p>Four templates that I created for my work. A little bit boring because we're following a template.</p>
-                        <div class="a-projects-links">
-                            <div class="a-projects-date"><i class="fa fa-calendar-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Date posted"></i>&nbsp;April 1, 2016</div>
-                            <a href="https://www.behance.net/gallery/35643943/First-few-projects-on-my-job" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Details"><i class="fa fa-behance fa-fw"></i></a></div>
+            <div class="right-section">
+                <div class="speech-bubble">
+                    <div class="speech-bubble-arrow-holder">
+                        <div class="speech-bubble-arrow"></div>
+                    </div>
+                    <div class="vertical-align-holder">
+                        <div class="vertical-align-content">
+                            <h3 class="speech-title">Behance</h3>
+                            <p class="speech-text">I post my latest finished projects on Behance. If you want to see my past works you can visit my profile there.</p>
+                            <div class="speech-buttons"><a class="btn btn-default btn-lg" href="https://www.behance.net/bos-eriko" target="_blank"><i class="fa fa-external-link fa-fw" aria-hidden="true"></i> Go to Profile</a></div>
                         </div>
                     </div>
-                    <!-- /Project Entry -->
-                <!-- Project Entry -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="a-projects-holder">
-                        <a href="https://www.behance.net/gallery/34958619/Speed-Site" target="_blank" class="a-projects-image-link"><img src="http://i.imgur.com/RtdOcQF.png" alt="Speed Site"/></a>
-                        <a href="https://www.behance.net/gallery/34958619/Speed-Site" target="_blank" class="a-projects-title">Speed Site</a>
-                        <p>This is just a reference site for my employer. I thought it was worth posting because even though it's simple it shows that I can also apply simple animations.</p>
-                        <div class="a-projects-links">
-                            <div class="a-projects-date"><i class="fa fa-calendar-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Date posted"></i>&nbsp;Mar 12, 2016</div>
-                            <a href="https://github.com/BosEriko/Speed-Site" target="blank" data-toggle="tooltip" data-placement="bottom" title="Open on GitHub"><i class="fa fa-github-alt fa-fw"></i></a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a href="https://www.behance.net/gallery/34958619/Speed-Site" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Details"><i class="fa fa-behance fa-fw"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Behance Section -->
+
+    <!-- Dribbble Section -->
+    <div class="dribbble-wallpaper" id="dribbble">
+        <div class="dribbble clearfix">
+            <div class="left-section">
+                <div class="vertical-align-holder">
+                    <div class="vertical-align-content text-center">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="speech-bubble">
+                    <div class="speech-bubble-arrow-holder">
+                        <div class="speech-bubble-arrow"></div>
+                    </div>
+                    <div class="vertical-align-holder">
+                        <div class="vertical-align-content">
+                            <h3 class="speech-title">Dribbble</h3>
+                            <p class="speech-text">Dribbble is where I post teasers and sneak peeks of my projects. Feel free to check them out!</p>
+                            <div class="speech-buttons"><a class="btn btn-default btn-lg" href="https://www.dribbble.com/BosEriko" target="_blank"><i class="fa fa-external-link fa-fw" aria-hidden="true"></i> Go to Profile</a></div>
                         </div>
                     </div>
-                    <!-- /Project Entry -->
-                    <div class="clearfix visible-sm-block"></div>
-                    <!-- Project Entry -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="a-projects-holder">
-                            <a href="https://www.behance.net/gallery/34464413/Personal-Portfolio" target="_blank" class="a-projects-image-link"><img src="http://i.imgur.com/skMABbI.jpg" alt="Personal Portfolio"/></a>
-                            <a href="https://www.behance.net/gallery/34464413/Personal-Portfolio" target="_blank" class="a-projects-title">Personal Portfolio</a>
-                            <p>My personal portfolio that is hosted on Github and Tumblr. Bootstrap and jQuery are used on this project.</p>
-                            <div class="a-projects-links">
-                                <div class="a-projects-date"><i class="fa fa-calendar-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Date posted"></i>&nbsp;Feb 27, 2016</div>
-                                <a href="http://boseriko.github.io/" target="blank" data-toggle="tooltip" data-placement="bottom" title="Go to Website"><i class="fa fa-link fa-fw"></i></a>
-                                &nbsp;&nbsp;&nbsp;
-                                <a href="https://www.behance.net/gallery/34464413/Personal-Portfolio" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Details"><i class="fa fa-behance fa-fw"></i></a></div>
-                            </div>
-                        </div>
-                        <!-- /Project Entry -->
-                        <!-- Project Entry -->
-                        <div class="col-md-3 col-sm-6">
-                            <div class="a-projects-holder">
-                                <a href="https://www.behance.net/gallery/33483687/Kuru-Anime-Anime-Social-Network" target="_blank" class="a-projects-image-link"><img src="http://i.imgur.com/nzU2QaA.jpg" alt="Kuru Anime"/></a>
-                                <a href="https://www.behance.net/gallery/33483687/Kuru-Anime-Anime-Social-Network" target="_blank" class="a-projects-title">Kuru Anime</a>
-                                <p>An anime social network born from Google+. The front-end was designed by me while the back-end used a CMS called uCoz.</p>
-                                <div class="a-projects-links">
-                                    <div class="a-projects-date"><i class="fa fa-calendar-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Date posted"></i>&nbsp;Jan 30, 2016</div>
-                                    <a href="http://kuru-anime.at.ua/" target="blank" data-toggle="tooltip" data-placement="bottom" title="Go to Website"><i class="fa fa-link fa-fw"></i></a>
-                                    &nbsp;&nbsp;&nbsp;
-                                    <a href="https://www.behance.net/gallery/33483687/Kuru-Anime-Anime-Social-Network" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Details"><i class="fa fa-behance fa-fw"></i></a></div>
-                                </div>
-                            </div>
-                            <!-- /Project Entry -->
-                            </div>
-                            <div class="a-projects-more">
-                                <a href="https://www.behance.net/bos-eriko" target="_blank"><i class="fa fa-behance-square fa-fw"></i>&nbsp;View More Projects</a>
-                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Dribbble Section -->
+
+    <!-- CodePen Section -->
+    <div class="codepen-wallpaper" id="codepen">
+        <div class="codepen clearfix">
+            <div class="left-section">
+                <div class="vertical-align-holder">
+                    <div class="vertical-align-content text-center">
+                        <i class="fa fa-codepen" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="speech-bubble">
+                    <div class="speech-bubble-arrow-holder">
+                        <div class="speech-bubble-arrow"></div>
+                    </div>
+                    <div class="vertical-align-holder">
+                        <div class="vertical-align-content">
+                            <h3 class="speech-title">CodePen</h3>
+                            <p class="speech-text">I write random codes on CodePen for fun. Please visit my profile there and tell me what you think about my creations.</p>
+                            <div class="speech-buttons"><a class="btn btn-default btn-lg" href="http://codepen.io/boseriko/" target="_blank"><i class="fa fa-external-link fa-fw" aria-hidden="true"></i> Go to Profile</a></div>
                         </div>
                     </div>
-                    <!-- /Projects -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /CodePen Section -->
 
-
-
-
-
-                    <!-- Testimonies -->
-                    <div class="jumbotron a-testimonies-jumbotron">
-                        <div class="container">
-                            <div class="a-testimonies-title">
-                                <h1>Testimonials</h1>
-                                <hr />
-                                <p>Their kind words.</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="a-testimony-holder">
-                                        <img src="http://i.imgur.com/aqsM516.jpg" alt="AJ Lavine" />
-                                        <div class="a-testimony-arrow"></div>
-                                        <div class="a-testimony-message">
-                                            <div class="a-testimony-message-inside"><i class="fa fa-quote-left fa-fw"></i>Just what I'm hoping for! Awesome work! I'll be asking you again next time if I have some work for you.<i class="fa fa-quote-right fa-fw"></i></div>
-                                            <div class="a-testimony-message-person">&mdash; AJ Lavine (Doodle It)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="a-testimony-holder">
-                                        <img src="http://i.imgur.com/SsTOslY.jpg" alt="Khairul Norisam" />
-                                        <div class="a-testimony-arrow"></div>
-                                        <div class="a-testimony-message">
-                                            <div class="a-testimony-message-inside"><i class="fa fa-quote-left fa-fw"></i>Oh my goodness. Your skills are professional. Someday your skills might get paid.<i class="fa fa-quote-right fa-fw"></i></div>
-                                            <div class="a-testimony-message-person">&mdash; Khairul Norisam (GridCraft)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clearfix visible-sm-block"></div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="a-testimony-holder">
-                                        <img src="http://i.imgur.com/8ETMaKa.jpg" alt="Rommel Pasamonte" />
-                                        <div class="a-testimony-arrow"></div>
-                                        <div class="a-testimony-message">
-                                            <div class="a-testimony-message-inside"><i class="fa fa-quote-left fa-fw"></i>Nice! I was expecting a website for pc only but you went ahead and made it responsive. This will be really helpful for my business!<i class="fa fa-quote-right fa-fw"></i></div>
-                                            <div class="a-testimony-message-person">&mdash; Rommel Pasamonte (TechBuilds)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clearfix visible-lg-block visible-md-block"></div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="a-testimony-holder">
-                                        <img src="http://i.imgur.com/jY7PSnR.jpg" alt="Mark Flint" />
-                                        <div class="a-testimony-arrow"></div>
-                                        <div class="a-testimony-message">
-                                            <div class="a-testimony-message-inside"><i class="fa fa-quote-left fa-fw"></i>This is some quality work.<i class="fa fa-quote-right fa-fw"></i></div>
-                                            <div class="a-testimony-message-person">&mdash; Mark Flint (B&amp;S Corp)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clearfix visible-sm-block"></div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="a-testimony-holder">
-                                        <img src="http://i.imgur.com/0m10RLq.jpg" alt="MJ Vilda" />
-                                        <div class="a-testimony-arrow"></div>
-                                        <div class="a-testimony-message">
-                                            <div class="a-testimony-message-inside"><i class="fa fa-quote-left fa-fw"></i>Thanks, bro. This is what I've been waiting for.<i class="fa fa-quote-right fa-fw"></i></div>
-                                            <div class="a-testimony-message-person">&mdash; MJ Vilda (exPet)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="a-testimony-holder">
-                                        <img src="http://i.imgur.com/kxkFDC5.jpg" alt="Jaize Delan" />
-                                        <div class="a-testimony-arrow"></div>
-                                        <div class="a-testimony-message">
-                                            <div class="a-testimony-message-inside"><i class="fa fa-quote-left fa-fw"></i>He made it really fast for me while maintaining the quality of the work.<i class="fa fa-quote-right fa-fw"></i></div>
-                                            <div class="a-testimony-message-person">&mdash; Jaize Delan (Bike Right)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    <!-- GitHub Section -->
+    <div class="github-wallpaper" id="github">
+        <div class="github clearfix">
+            <div class="left-section">
+                <div class="vertical-align-holder">
+                    <div class="vertical-align-content text-center">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="speech-bubble">
+                    <div class="speech-bubble-arrow-holder">
+                        <div class="speech-bubble-arrow"></div>
+                    </div>
+                    <div class="vertical-align-holder">
+                        <div class="vertical-align-content">
+                            <h3 class="speech-title">GitHub</h3>
+                            <p class="speech-text">Check my GitHub page out if you're interested to see what kinds of programs I make.</p>
+                            <div class="speech-buttons"><a class="btn btn-default btn-lg" href="https://github.com/BosEriko" target="_blank"><i class="fa fa-external-link fa-fw" aria-hidden="true"></i> Go to Profile</a></div>
                         </div>
                     </div>
-                    <!-- /Testimonies -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /GitHub Section -->
 
+    <!-- Footer -->
+    <footer>
+        <a href="mailto:mail@boseriko.com">
+            <div class="vertical-align-holder">
+                <div class="vertical-align-content">mail@boseriko.com</div>
+            </div>
+        </a>
+    </footer>
+    <!-- /Footer -->
 
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="vertical-align-holder">
+            <div class="vertical-align-content">
+                <div class="sk-folding-cube">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Loading Screen -->
 
-
-
-                    <!-- Hire Me -->
-                    <div class="jumbotron a-hire-me-jumbotron">
-                        <div class="container">
-                            <h1>Need a responsive website?</h1>
-                            <div><a href="http://goo.gl/forms/ERQnpbVSv4" target="_blank"><i class="fa fa-heart fa-fw"></i>&nbsp;Hire Me</a></div>
-                        </div>
-                    </div>
-                    <!-- /Hire Me -->
-
-
-
-
-
-                    <!-- Footer -->
-                    <footer>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 a-footer-pull-left">Bos Eriko &copy; 2016 <span style="color:#BFBFBF;">&middot;</span> Made with <i class="fa fa-heart fa-fw" style="color:#ff9999;" data-toggle="tooltip" data-placement="top" title="love"></i> by me <span style="color:#BFBFBF;">&middot;</span> All rights reserved</div>
-                                <div class="col-sm-12 col-md-6 a-footer-pull-right"><a href="/">Home</a> <span style="color:#D1D1D1;">|</span> <a href="about.htm">About</a> <span style="color:#D1D1D1;">|</span> <a href="https://www.behance.net/bos-eriko" target="_blank" data-toggle="tooltip" data-placement="top" title="Go to Behance">Projects</a> <span style="color:#D1D1D1;">|</span> <a href="http://boseriko.tumblr.com">Blog</a> <span style="color:#D1D1D1;">|</span> <a href="http://goo.gl/forms/ERQnpbVSv4" target="_blank">Hire me</a> <span style="color:#D1D1D1;">|</span> <a href="#a-top-button">Back to Top</a></div>
-                            </div>
-                        </div>
-                    </footer>
-                    <!-- /Footer -->
-
-
-
-
-
-                    <!-- Scripts -->
-                    <script src="script/jquery-2.1.4.min.js"></script>
-                    <script src="script/bootstrap.min.js"></script>
-                    <script src="script/personal.js"></script>
-                    <!-- /Scripts -->
-
-                </body>
-                </html>
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <!-- /Scripts -->
+</body>
+</html>
