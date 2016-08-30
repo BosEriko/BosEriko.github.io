@@ -139,9 +139,11 @@ $(function(){
     /* Animation End */
 
     /* Loading Screen Start */
+    $("title").html("Loading — Refresh the page if it keeps loading.");
     $(window).on("load", function() {
         $("body").css("overflow-y", "scroll");
         $(".loading-screen").fadeOut();
+        $("title").html("Bos Eriko Reyes - Front-end Website Developer/Designer");
     });
     /* Loading Screen End */
 });
