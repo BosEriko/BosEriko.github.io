@@ -1054,7 +1054,33 @@ footer a .vertical-align-holder{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     text-align: center;
+    text-transform: uppercase;
 }
+.loading-screen a.force-load{
+    background-color: rgba(0,0,0,.1);
+    border-radius: 3px;
+    bottom: 20px;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    text-transform: uppercase;
+    transform: translateX(100vw);
+    transition: all 0.3s 0s ease-out;
+    -webkit-transition: all 0.3s 0s ease-out;
+}
+.loading-screen a.force-load.show{
+    transform: translateX(0);
+}
+.loading-screen a:hover.force-load,
+.loading-screen a:focus.force-load{
+    background-color: rgba(0,0,0,.2);
+    text-decoration: none;
+}
+
 .sk-folding-cube {
     margin: 20px auto;
     width: 40px;
@@ -1063,7 +1089,6 @@ footer a .vertical-align-holder{
     -webkit-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
 }
-
 .sk-folding-cube .sk-cube {
     float: left;
     width: 50%;

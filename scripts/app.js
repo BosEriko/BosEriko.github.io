@@ -145,5 +145,14 @@ $(function(){
         $(".loading-screen").fadeOut();
         $("title").html("Bos Eriko Reyes - Front-end Website Developer/Designer");
     });
+    setTimeout(function() {
+        $(".loading-screen a.force-load").addClass("show");
+    }, 5000);
+    $(".loading-screen a.force-load").click(function(e){
+        $("body").css("overflow-y", "scroll");
+        $(".loading-screen").fadeOut();
+        $("title").html("Bos Eriko Reyes - Front-end Website Developer/Designer");
+        e.preventDefault();
+    });
     /* Loading Screen End */
 });
