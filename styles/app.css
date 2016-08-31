@@ -278,7 +278,8 @@ footer{
     background-position: center;
     background-size: cover;
 }
-footer a{
+footer a,
+footer a:visited{
     background-color: rgba(205, 60, 42, .95);
     display: block;
     color: #fff;
@@ -440,7 +441,8 @@ footer a .vertical-align-holder{
 .about-me .right-section{
     opacity: 0;
 }
-.about-me .e-mail a{
+.about-me .e-mail a,
+.about-me .e-mail a:visited{
     color: #888;
     text-decoration: underline;
 }
