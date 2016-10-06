@@ -1,0 +1,38 @@
+//output:index.html, pretty:true
+
+//- Global Variable Start
+- pageCode = "index"
+include ./_variables.jade
+//- Global Variable End
+
+doctype
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(name="description", content="#{siteDescription}")
+        meta(name="keywords" content="#{metaKeywords}")
+        title #{siteTitle}
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css")
+        link(type="text/css", rel="StyleSheet", href="./styles/base.css")
+        link(rel="stylesheet", href="#{fontAwesome}")
+        
+        <!--[if lt IE 9]>
+        script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
+        script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+        <![endif]-->
+        
+    body(ng-app="myApp")
+        .main(ng-controller="MainController")
+            .item-holder(ng-repeat="car in cars") {{ car.id }}
+        
+        // Scripts Start
+        script(src="#{jQuery}")
+        script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js")
+        script(src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js")
+        script(src="./scripts/app.js")
+        script(src="./scripts/angular-app.js")
+        script(src="./scripts/angular-controller.js")
+        script(src="./scripts/cars-directory.js")
+        // Scripts End
